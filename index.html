@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>PRO_Kino</title>
+    <link rel="stylesheet" href="./vendor/normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="./vendor/font.css" />
+  </head>
+  <body class="page">
+    <header class="header">
+      <div class="header__container">
+        <img src="./img/header__logo.svg" class="header__logo" alt="Логотип ПРО_Кино" />
+        <a class="header__link" href="#trailers">Смотреть трейлер</a>
+      </div>
+    </header>
+    <main class="main">
+      <div class="hero">
+        <div class="hero__info">
+          <div class="hero__description"></div>
+          <p class="hero__date">
+            <time datetime="2024-02-22">22 февраля</time>
+          </p>
+          <a class="hero__arrow" href="#about">
+            <img src="./img/hero__arrow.svg" alt="Стрелочка вниз" />
+          </a>
+        </div>
+      </div>
+      <section class="about" id="about">
+        <div class="about__content">
+          <h1 class="about__title">Аватар: Легенда об Аанге</h1>
+          <p class="about__text">
+            Сюжет рассказывает о мальчике из племени воздушных кочевников, Аанге, способном покорять
+            стихию воздуха. В возрасте 11 лет, он узнал, что он Аватар — властелин четырёх стихий.
+            Мир погряз в многолетней войне нации Огня против остального мира, в котором определённые
+            люди способны покорять одну из четырёх стихий — воду, землю, огонь или воздух. Аанг —
+            единственный, кто способен покорить все элементы и будучи Аватаром, он должен спасти мир
+            от уничтожения нацией Огня. Со своими новыми друзьями, Катарой и Соккой, Аанг
+            отправляется овладевать стихиями, попутно их преследует изгнанный принц нации Огня —
+            Зуко, который хочет вернуть себе честь, поймав Аватара.
+          </p>
+        </div>
+        <img src="./img/about__img.svg" class="about__image" alt="Аватар верхом на монстре" />
+      </section>
+      <section class="trailers" id="trailers">
+        <ul class="trailers__buttons">
+          <li class="trailers__button-item">
+            <button class="trailers__button trailers__button-active">Трейлер 1</button>
+          </li>
+          <li class="trailers__button-item">
+            <button class="trailers__button trailers__button-active">Трейлер 2</button>
+          </li>
+          <li class="trailers__button-item">
+            <button class="trailers__button trailers__button-active">Трейлер 3</button>
+          </li>
+        </ul>
+        <ul class="trailers__list">
+          <img src="./img/play__button.svg" class="trailers__list-image" />
+          <li class="trailers__item">
+            <div class="trailers__wrapper">
+              <iframe
+                class="trailers__video trailers__video-1"
+                width="1300"
+                height="700"
+                src="https://www.youtube.com/embed/ByAn8DF8Ykk?modestbranding=1&controls=0"
+                title="YouTube video player"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </li>
+          <li class="trailers__item">
+            <div class="trailers__wrapper">
+              <iframe
+                class="trailers__video trailers__video-2"
+                width="1300"
+                height="700"
+                src="https://www.youtube.com/embed/xEmlE9Ianuo?modestbranding=1&controls=0"
+                title="YouTube video player"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </li>
+          <li class="trailers__item">
+            <div class="trailers__wrapper">
+              <iframe
+                class="trailers__video trailers__video-3"
+                width="1300"
+                height="700"
+                src="https://www.youtube.com/embed/waJKJW_XU90?si=eCIKojEsMtvzU0MK"
+                title="YouTube video player"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <ul class="footer__developers">
+          <li class="footer__developer">
+            Developer:
+            <a class="footer__link" href="https://github.com/EvgenyZaryanov">Eugene Zaryanov</a>
+          </li>
+          <li class="footer__developer">Designer: Anastasia Ilina</li>
+        </ul>
+        <p class="footer__copyright">© ПРОКИНО, 2024</p>
+        <img src="./img/footer__logo.svg" class="footer__logo" alt="Логотип ПРО_Кино" />
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
