@@ -1,3 +1,29 @@
+const link = document.querySelector('.header__link');
+const trailersSection = document.getElementById('trailers');
+
+link.addEventListener('click', function (event) {
+  event.preventDefault();
+  const trailersSectionTop = trailersSection.offsetTop;
+
+  window.scrollTo({
+    top: trailersSectionTop,
+    behavior: 'smooth'
+  });
+});
+
+const arrow = document.querySelector('.hero__arrow');
+const aboutSection = document.getElementById('about');
+
+arrow.addEventListener('click', function (event) {
+  event.preventDefault();
+  const aboutSectionTop = aboutSection.offsetTop;
+
+  window.scrollTo({
+    top: aboutSectionTop,
+    behavior: 'smooth'
+  });
+});
+
 document.querySelectorAll('.trailers__button').forEach(button => {
   button.addEventListener('click', function () {
     document.querySelectorAll('.trailers__button').forEach(button => {
@@ -7,22 +33,17 @@ document.querySelectorAll('.trailers__button').forEach(button => {
   });
 });
 
-// Получаем все кнопки трейлеров и все видео
 const buttons = document.querySelectorAll('.trailers__button');
 const videos = document.querySelectorAll('.trailers__video');
 
-// Добавляем обработчик события click для каждой кнопки
 buttons.forEach((button, index) => {
   button.addEventListener('click', function () {
-    // Скрываем все видео
     videos.forEach(video => {
       video.style.display = 'none';
     });
 
-    // Находим индекс кнопки, по которой было совершено нажатие
     const buttonIndex = Array.from(buttons).indexOf(button);
 
-    // Показываем соответствующее видео
     videos[buttonIndex].style.display = 'block';
   });
 });

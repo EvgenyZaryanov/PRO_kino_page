@@ -1,3 +1,7 @@
+@import url(./vendor/normalize.css);
+@import url(./vendor/default.css);
+@import url(./vendor/font.css);
+
 .page {
   max-width: 1440px;
   width: 100%;
@@ -221,14 +225,14 @@
   outline: none;
 }
 
-.trailers__item {
+/* .trailers__item {
 }
 
 .trailers__wrapper {
 }
 
 .trailers__video {
-}
+} */
 
 .trailers__video-2,
 .trailers__video-3 {
@@ -264,6 +268,16 @@
 .footer__link {
   text-decoration: none;
   color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.footer__link:focus,
+.footer__link:hover {
+  color: rgb(255, 82, 27);
 }
 
 .footer__copyright {
