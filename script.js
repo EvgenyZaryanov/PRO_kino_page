@@ -1,7 +1,18 @@
 const link = document.querySelector('.header__link');
+const link2 = document.querySelector('.hero__link');
 const trailersSection = document.getElementById('trailers');
 
 link.addEventListener('click', function (event) {
+  event.preventDefault();
+  const trailersSectionTop = trailersSection.offsetTop;
+
+  window.scrollTo({
+    top: trailersSectionTop,
+    behavior: 'smooth'
+  });
+});
+
+link2.addEventListener('click', function (event) {
   event.preventDefault();
   const trailersSectionTop = trailersSection.offsetTop;
 
