@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./vendor/normalize.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" type="text/css" href="./vendor/font.css" />
+    <link rel="shortcut icon" href="./img/site-icon.png" type="image/x-icon" />
   </head>
   <body class="page">
     <header class="header">
@@ -46,27 +47,29 @@
       </section>
       <section class="trailers" id="trailers">
         <ul class="trailers__buttons">
-          <li class="trailers__button-item">
-            <button class="trailers__button trailers__button-active">Трейлер 1</button>
+          <li class="trailers__item-button">
+            <button class="trailers__button trailers__button_active" aria-label="Первый трейлер">
+              Трейлер 1
+            </button>
           </li>
-          <li class="trailers__button-item">
-            <button class="trailers__button trailers__button-active">Трейлер 2</button>
+          <li class="trailers__item-button">
+            <button class="trailers__button" aria-label="Второй трейлер">Трейлер 2</button>
           </li>
-          <li class="trailers__button-item">
-            <button class="trailers__button trailers__button-active">Трейлер 3</button>
+          <li class="trailers__item-button">
+            <button class="trailers__button" aria-label="Тизер">Трейлер 3</button>
           </li>
         </ul>
         <ul class="trailers__list">
-          <img src="./img/play__button.svg" class="trailers__list-image" />
           <li class="trailers__item">
             <div class="trailers__wrapper">
               <iframe
                 class="trailers__video trailers__video-1"
                 width="1300"
                 height="700"
-                src="https://www.youtube.com/embed/ByAn8DF8Ykk?modestbranding=1&controls=0"
+                src="https://www.youtube.com/embed/ByAn8DF8Ykk?si=pVcaO6UQta0_BkYA"
                 title="YouTube video player"
                 frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen
               ></iframe>
             </div>

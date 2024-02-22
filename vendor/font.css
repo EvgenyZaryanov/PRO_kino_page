@@ -2,4 +2,5 @@
   font-family: 'Inter', sans-serif;
   src: url(./inter-v13-cyrillic_latin-regular.woff2) format('woff2'),
     url(./inter-v13-cyrillic_latin-600.woff2) format('woff2');
+  font-display: swap;
 }
